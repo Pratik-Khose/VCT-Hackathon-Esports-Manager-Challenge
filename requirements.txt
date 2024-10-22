@@ -1,5 +1,4 @@
 streamlit
-pypdf
 langchain
 faiss-cpu
 boto3
