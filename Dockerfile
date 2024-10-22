@@ -3,6 +3,7 @@ FROM python:3.12-slim
 # remember to expose the port your app'll be exposed on.
 EXPOSE 8080
 
+#run
 RUN pip install -U pip
 
 COPY requirements.txt app/requirements.txt
