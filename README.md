@@ -4,7 +4,7 @@
 
 ### **Overview:**
 
-We have developed ValorScout, an AI-powered digital assistant designed to assist VALORANT esports team managers in scouting, recruiting, and assembling optimal team compositions. This assistant leverages Amazon Bedrock's capabilities, particularly its support for large language models (LLMs), to analyze player data and provide actionable insights that help in decision-making. The project focuses on streamlining the process of building effective VALORANT teams by using advanced AI techniques for analyzing and interpreting esports data.
+We have developed an AI-powered digital assistant designed to assist VALORANT esports team managers in scouting, recruiting, and assembling optimal team compositions. This assistant leverages Amazon Bedrock's capabilities, particularly its support for large language models (LLMs), to analyze player data and provide actionable insights that help in decision-making. The project focuses on streamlining the process of building effective VALORANT teams by using advanced AI techniques for analyzing and interpreting esports data.
 
 Our solution includes a conversational chatbot interface built with Streamlit, allowing easy and interactive queries, providing real-time answers, and suggesting team configurations based on various factors like player strengths, roles, and synergy between players. We also integrated LLM fine-tuning techniques to make the assistant highly specific and efficient for the VALORANT esports domain.
 
@@ -12,7 +12,7 @@ Our solution includes a conversational chatbot interface built with Streamlit, a
 In esports, assembling a balanced and effective team is critical for success. The process of scouting players, evaluating their roles, and predicting team synergy can be highly time-consuming and subjective. Our goal was to build a digital assistant that would automate and optimize this process for a VALORANT team’s general manager or recruiter by delivering data-driven insights and recommendations.
 
 ### **Solution Summary:**
-ValorScout was designed to solve this challenge by providing a LLM-powered chatbot that allows users to interact with esports data efficiently. The assistant is capable of answering various questions about players and teams, helping in role assignment, evaluating team compositions, and offering justifications for specific configurations. By using Amazon Bedrock’s fine-tuned models, the assistant understands the VALORANT esports domain and delivers precise, contextually relevant responses.
+This was designed to solve this challenge by providing a LLM-powered chatbot that allows users to interact with esports data efficiently. The assistant is capable of answering various questions about players and teams, helping in role assignment, evaluating team compositions, and offering justifications for specific configurations. By using Amazon Bedrock’s fine-tuned models, the assistant understands the VALORANT esports domain and delivers precise, contextually relevant responses.
 
 ## **Technology Stack & Detailed Workflow:**
 
@@ -26,13 +26,13 @@ ValorScout was designed to solve this challenge by providing a LLM-powered chatb
 2. **Data Ingestion & Storage:**
 
 - **Data Sources:** We gathered and formatted data from multiple sources, including official VALORANT API endpoints, community-built datasets, and esports player stats. This data includes detailed player information such as their preferred agents, play styles, roles (Duelist, Controller, Initiator, Sentinel), and their match history.
-- We used AWS S3 to store the data, ensuring scalability and quick access. The data is loaded into the LLM-powered system to enable real-time queries.
+- We used AWS S3 to store the data, ensuring scalability and quick access. The data is loaded into the LLM-powered system to enable queries.
 
 3. **Streamlit Frontend for Chatbot Interface:**
 
 - We built the user interface with Streamlit, a powerful tool for creating data-driven web applications with minimal effort. The interface offers a conversational chatbot where the user (team manager, recruiter, etc.) can ask questions.
 
-- The chatbot retrieves the relevant information using Amazon Bedrock's fine-tuned LLM and displays the response in an easy-to-read format, often accompanied by data visualizations.
+- The chatbot retrieves the relevant information using Amazon Bedrock's fine-tuned LLM and displays the response in an easy-to-read format, often accompanied by data.
 
 4. **LLM Fine-Tuning & Deployment on AWS Bedrock:**
 
@@ -55,20 +55,17 @@ Additionally, it uses algorithms for player role assignment based on team needs,
 - **Team Synergy Analysis:**
     - The assistant evaluates potential team lineups, analyzes past team performance metrics, and gives insights on how well players perform together.
  
-- **Query Capabilities:**
-
-    - The assistant can handle complex, multi-part queries like. It processes the requests and responds with detailed, actionable insights.
 
 ## **Challenges & Learning:**
 
 - **Fine-tuning LLM for Domain Specificity:**
 
     - One of the key challenges was fine-tuning the model to understand VALORANT-specific terms, player roles, and game mechanics. We overcame this by carefully selecting relevant datasets and performing multiple iterations of training.
+      
 - **Data Retrieval:**
 
     - Ensuring that the model retrieves trained data from esports sources required building a dynamic data pipeline integrated with APIs and databases that provide up-to-date player stats.
-- **Scalability:**
-    - Using Amazon Bedrock ensured that the solution could scale to accommodate high traffic loads and deliver low-latency responses, a crucial feature for a real-time esports assistant.
+
     
 ## Conclusion:
 ValorScout is a highly specialized AI assistant designed to automate and enhance the esports recruitment process. By leveraging cutting-edge technology like Amazon Bedrock, LLMs, and Streamlit, we have created a powerful, user-friendly tool that delivers insightful recommendations on player roles, team compositions, and player synergy. It streamlines the decision-making process for esports managers, allowing them to focus on strategy and talent, while the AI handles data retrieval, analysis, and optimization.
